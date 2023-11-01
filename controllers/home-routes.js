@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
 // http://localhost:3001/login
 router.get("/login", async (req, res) => {
   try {
-    res.status(200).json("This will display the login page!");
+    res.render("login");
   } catch (error) {
     console.log(err);
     res.status(500).json(err);
