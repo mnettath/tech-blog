@@ -23,7 +23,7 @@ router.get("/login", async (req, res) => {
 // http://localhost:3001/signup
 router.get("/signup", async (req, res) => {
   try {
-    res.status(200).json("This will display the sign up page!");
+    res.render("signup");
   } catch (error) {
     console.log(err);
     res.status(500).json(err);
@@ -33,7 +33,7 @@ router.get("/signup", async (req, res) => {
 // http://localhost:3001/dashboard
 router.get("/dashboard", async (req, res) => {
   try {
-    res.status(200).json("This will display the dashboard page!");
+    res.render("dashboard");
   } catch (error) {
     console.log(err);
     res.status(500).json(err);
